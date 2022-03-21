@@ -1,0 +1,8 @@
+<div class="container">
+  <header class="row justify-content-center mt-3 mb-5">
+    <h1>Список постов: 12</h1>
+  </header>
+  <main>
+    <app-post-item *ngFor="let post of posts.slice(0, 4)" [post]="post"></app-post-item>
+  </main>
+</div>
