@@ -39,4 +39,8 @@ export class PostsComponent implements OnInit {
   getPosts(): Observable<Post[]> {
     return this.http.get<Post[]>('https://jsonplaceholder.typicode.com/posts')
   }
+
+  /*getPostFromController(): Observable<any> {
+    return this.http.get('/api/posts')
+  }*/
 }
