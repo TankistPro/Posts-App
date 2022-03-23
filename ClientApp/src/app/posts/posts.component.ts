@@ -22,9 +22,6 @@ export class PostsComponent implements OnInit {
     private eventEmiter: EventEmmiterService
   ) { }
 
-  @Output()
-  postsListEvent: EventEmitter<Post[]> = new EventEmitter();
-
   public posts: Post[] = []
 
   ngOnInit(): void {
